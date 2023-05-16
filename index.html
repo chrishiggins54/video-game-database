@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Database</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Video Game Database</h1>
+
+    <div id="upload_single">
+        <h3>Upload Single Game</h3>
+        <textarea id="single_game_json" rows="10" cols="50"></textarea><br>
+        <button id="upload_single_btn">Upload Single Game</button>
+    </div>
+
+    <div id="upload_batch">
+        <h3>Upload Multiple Games</h3>
+        <textarea id="batch_games_json" rows="10" cols="50"></textarea><br>
+        <button id="upload_batch_btn">Upload Multiple Games</button>
+    </div>
+
+    <h2>Query Game Data</h2>
+    <form id="queryForm">
+        <label for="queryFilter">Filter by:</label>
+        <select id="queryFilter">
+            <option value="Platform">Platform</option>
+            <option value="Genre">Genre</option>
+            <option value="Year">Year</option>
+        </select>
+        <select id="query_value_dropdown" class="form-control"></select>
+        <button type="submit">Search</button>
+    </form>
+    <h3>Query Results:</h3>
+    <div id="queryResults"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
