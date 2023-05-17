@@ -1,3 +1,6 @@
+# Lambda function created using Python. Allows single/batch uploads of JSON data and querying of DynamoDB table.
+# When new items are added, it triggers an SNS email notification and also automatically adds game data to an S3 bucket.
+
 import json
 import boto3
 from botocore.exceptions import ClientError
