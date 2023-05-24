@@ -1,6 +1,6 @@
 // Execute when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    const apiUrl = "https://csg5ntlnsd.execute-api.eu-west-1.amazonaws.com/prod/gameresource";
+    const apiUrl = "https://ftyyhkn7fc.execute-api.eu-west-1.amazonaws.com/prod/gameresource";
 
     // Upload single game
     function uploadSingleGame() {
